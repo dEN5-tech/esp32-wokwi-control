@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Student",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -90, "left": 180, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:TX", "$serial:rx", "", [] ],
+    [ "uno:RX", "$serial:tx", "", [] ],
+    [ "servo1:PWM", "uno:9", "orange", [ "v0" ] ],
+    [ "servo1:V+", "uno:5V", "red", [ "v0" ] ],
+    [ "servo1:GND", "uno:GND.1", "black", [ "v0" ] ]
+  ]
+}
