@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "1. Собрать JavaFX Клиент (build.bat)",
+            "type": "shell",
+            "command": "${workspaceFolder}/build.bat",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "2. Запустить JavaFX Клиент (run.bat)",
+            "type": "shell",
+            "command": "${workspaceFolder}/run.bat",
+            "problemMatcher": []
+        }
+    ]
+}

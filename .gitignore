@@ -1,0 +1,10 @@
+# Скомпилированные классы и кэш PlatformIO
+bin/
+*.class
+.pio/
+
+# Временные файлы и логи
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
